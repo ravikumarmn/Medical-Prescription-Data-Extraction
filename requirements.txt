@@ -1,0 +1,5 @@
+openai
+streamlit
+streamlit_drawable_canvas
+Pillow
+pydantic
