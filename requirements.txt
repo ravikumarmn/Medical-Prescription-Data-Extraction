@@ -3,3 +3,4 @@ streamlit
 streamlit_drawable_canvas
 Pillow
 pydantic
+opencv-python
