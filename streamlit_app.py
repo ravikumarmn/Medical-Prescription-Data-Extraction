@@ -12,9 +12,10 @@ from streamlit_drawable_canvas import st_canvas
 
 import cv2
 MODEL = "gpt-4o-2024-08-06"
-API_KEY = os.environ.get(
-    "OPENAI_API_KEY", "<your OpenAI API key if not set as an env var>")
+# API_KEY = os.environ.get(
+#     "OPENAI_API_KEY", "<your OpenAI API key if not set as an env var>")
 
+API_KEY = st.secrets['OPENAI_API_KEY']
 client = openai.OpenAI(api_key=API_KEY)
 
 
