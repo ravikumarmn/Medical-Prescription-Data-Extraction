@@ -92,7 +92,7 @@ if st.button("Submit"):
         token_count = len(base64_image) // 4
 
         estimated_cost = estimate_cost(token_count)
-        st.write(f"Estimated Cost for Processing: {estimated_cost:.4f}")
+        # st.write(f"Estimated Cost for Processing: {estimated_cost:.4f}")
 
         response = client.chat.completions.create(
             model=MODEL,  # Use the latest GPT-4o model identifier
