@@ -91,7 +91,7 @@ if st.button("Submit"):
         base64_image = encode_image("temp_image.png")
         token_count = len(base64_image) // 4
 
-        estimated_cost = estimate_cost(token_count)
+        # estimated_cost = estimate_cost(token_count)
         # st.write(f"Estimated Cost for Processing: {estimated_cost:.4f}")
 
         response = client.chat.completions.create(
